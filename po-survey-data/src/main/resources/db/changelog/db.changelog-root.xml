@@ -119,10 +119,10 @@
             <column name="company_type" type="VARCHAR(255)">
                 <constraints nullable="true" />
             </column>
-            <column name="developer_type" type="VARCHAR(255)">
+            <column name="developer_type" type="VARCHAR(350)">
                 <constraints nullable="true" />
             </column>
-            <column name="employment_status" type="VARCHAR(255)">
+            <column name="employment_status" type="VARCHAR(350)">
                 <constraints nullable="true" />
             </column>
             <column name="home_remote" type="VARCHAR(255)">
@@ -220,7 +220,7 @@
             <column name="have_worked_framework" type="VARCHAR(255)">
                 <constraints nullable="true" />
             </column>
-            <column name="have_worked_language" type="VARCHAR(255)">
+            <column name="have_worked_language" type="VARCHAR(350)">
                 <constraints nullable="true" />
             </column>
             <column name="have_worked_platform" type="VARCHAR(255)">
