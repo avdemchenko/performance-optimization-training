@@ -13,6 +13,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import software.sigma.training.po.survey.services.api.CSVProcessorService;
 
 import java.io.IOException;
+import java.util.Objects;
 
 @Controller
 public class UploadController {
@@ -33,7 +34,7 @@ public class UploadController {
             redirectAttributes.addFlashAttribute("message", "Please select file to upload");
             return "redirect:/";
         }
-        String fileName = StringUtils.cleanPath(file.getOriginalFilename());
+        String fileName = StringUtils.cleanPath(Objects.requireNonNull(file.getOriginalFilename()));
 
         long startTime = System.currentTimeMillis();
         try {
